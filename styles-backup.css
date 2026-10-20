@@ -1,0 +1,683 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+:root{--ink:#202225;--muted:#6f747a;--dark:#202225;--dark2:#292b2e;--gold:#c7a15a;--gold-light:#e4c98e;--paper:#f5f5f2;--white:#fff;--line:#e5e3dd;--max:1180px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:'DM Sans',Arial,sans-serif;line-height:1.65;background:var(--paper)}img{display:block;max-width:100%}a{color:inherit;text-decoration:none}.site-header{height:78px;padding:0 max(5vw,24px);display:flex;align-items:center;justify-content:space-between;gap:30px;background:#fbfbf8;position:sticky;top:0;z-index:20;border-bottom:1px solid rgba(30,30,30,.08)}.brand{font-family:Manrope,sans-serif;font-size:20px;font-weight:800;letter-spacing:-.7px;white-space:nowrap}.brand span{font-weight:500;color:#777}.main-nav{display:flex;align-items:center;gap:25px;font-size:13px;font-weight:600}.main-nav>a:not(.nav-cta){padding:28px 0;position:relative;color:#45474a}.main-nav>a.active:after,.main-nav>a:not(.nav-cta):hover:after{content:"";position:absolute;bottom:19px;left:0;right:0;height:2px;background:var(--gold)}.nav-cta{padding:11px 16px;background:var(--dark);color:white;border-radius:2px;font-size:12px;letter-spacing:.2px}.nav-cta:hover,.button-dark:hover{background:#3b3d40}.menu-toggle{display:none;border:0;background:none;font-size:25px}
+.hero{min-height:590px;position:relative;display:flex;align-items:center;overflow:hidden;color:white;background:#36302b url('images/advant-panels.jpeg') center/cover no-repeat}.hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(90deg,rgba(24,25,26,.88) 0%,rgba(24,25,26,.64) 48%,rgba(24,25,26,.18) 100%);z-index:0}.hero-shade{display:none}.hero-content{position:relative;z-index:1;max-width:var(--max);width:100%;padding:82px 28px;margin:0 auto}.eyebrow{font-size:10px;letter-spacing:2.2px;font-weight:700;color:var(--gold);margin:0 0 14px}.hero h1,.page-hero h1{font-family:Manrope,sans-serif;font-size:clamp(38px,5vw,62px);line-height:1.12;letter-spacing:-1.8px;max-width:660px;margin:0 0 22px;font-weight:800}.hero h1 span{color:var(--gold-light)}.hero-content>p:not(.eyebrow){font-size:16px;max-width:520px;color:#e6e5e1;margin:0 0 30px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.button{display:inline-flex;align-items:center;justify-content:center;padding:13px 21px;font-family:inherit;font-size:12px;font-weight:700;border:1px solid transparent;cursor:pointer;transition:.2s}.button-gold{background:var(--gold);color:#201f1c}.button-gold:hover{background:var(--gold-light)}.button-outline{border-color:rgba(255,255,255,.7);color:white;background:transparent}.button-outline:hover{background:white;color:var(--dark)}.button-dark{background:var(--dark);color:white}.hero-caption{position:absolute;right:5vw;bottom:25px;color:#f1e9d9;font-size:11px;letter-spacing:1px}
+.section{padding:88px max(5vw,24px)}.section-light{background:var(--paper)}.section-heading{text-align:center;max-width:650px;margin:0 auto 40px}.section-heading h2,.feature-copy h2,.quote-strip h2,.contact-copy h2,.about-layout h2{font-family:Manrope,sans-serif;font-size:clamp(28px,3vw,39px);line-height:1.2;letter-spacing:-1px;margin:0 0 14px}.section-heading>p:last-child{color:var(--muted);margin:0}.product-grid{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:23px}.product-card{background:#fff;border:1px solid #eae8e2;transition:transform .25s,box-shadow .25s;min-width:0}.product-card:hover{transform:translateY(-4px);box-shadow:0 15px 35px rgba(0,0,0,.08)}.product-image{height:235px;background:#e9e7e1;display:block;overflow:hidden}.product-image img{width:100%;height:100%;object-fit:cover;transition:transform .4s}.product-card:hover .product-image img{transform:scale(1.035)}.product-info{padding:22px 22px 24px}.product-type{font-size:9px;letter-spacing:1.6px;font-weight:700;color:#a58342;margin:0 0 7px}.product-info h3{font-family:Manrope,sans-serif;font-size:19px;line-height:1.3;margin:0 0 10px}.product-info>p:not(.product-type){font-size:13px;color:var(--muted);margin:0 0 18px}.text-link{font-size:12px;font-weight:700;color:#4a3b20}.text-link span{color:#aa8543}.center{text-align:center;margin-top:35px}.feature-band{background:var(--dark);color:white;display:grid;grid-template-columns:1fr 1fr;min-height:480px}.feature-image{min-height:400px}.feature-image img{width:100%;height:100%;object-fit:cover;max-height:600px}.feature-copy{align-self:center;padding:70px clamp(30px,7vw,100px)}.feature-copy>p:not(.eyebrow){color:#c6c6c3;font-size:14px}.check-list{padding:0;list-style:none;margin:24px 0}.check-list li{margin:10px 0;font-size:13px;color:#dededb}.check-list li:before{content:"✓";color:var(--gold);margin-right:12px;font-weight:700}.feature-copy .text-link{color:var(--gold-light)}.quote-strip{background:#e9e2d4;padding:52px max(5vw,24px);display:flex;align-items:center;justify-content:space-between;gap:30px}.quote-strip h2{max-width:650px;font-size:clamp(25px,3vw,34px)}.quote-strip p:not(.eyebrow){color:#69665f;font-size:13px;margin-bottom:0}.site-footer{background:#1d1f21;color:#f5f5f2;padding:45px max(5vw,24px) 18px}.footer-top{max-width:var(--max);margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:14px 30px;align-items:center}.brand-footer{color:white}.brand-footer span{color:#b5b5b0}.footer-top>p{margin:0;color:#aaa;font-size:12px;text-align:right}.footer-links{grid-column:1/-1;display:flex;gap:22px;flex-wrap:wrap;border-top:1px solid #3c3d3e;border-bottom:1px solid #3c3d3e;padding:20px 0;margin-top:12px;font-size:11px;color:#c5c5c0}.footer-links a:hover{color:var(--gold-light)}.footer-bottom{max-width:var(--max);margin:18px auto 0;display:flex;justify-content:space-between;gap:15px;font-size:10px;color:#8f918f}
+.page-hero{padding:82px 24px 76px;text-align:center;background:linear-gradient(110deg,#26282a,#35302a);color:white}.page-hero .eyebrow{margin-bottom:12px}.page-hero h1{font-size:clamp(34px,4.5vw,52px);margin:0 auto 15px;max-width:850px}.page-hero>p:last-child{max-width:680px;margin:0 auto;color:#d1d0cb;font-size:14px}.product-grid-wide{row-gap:28px}.notice{max-width:var(--max);margin:32px auto 0;padding:15px 18px;border-left:3px solid var(--gold);background:#ece9e1;color:#68665f;font-size:12px}.service-grid{max-width:var(--max);margin:0 auto 35px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.service-card{padding:30px;background:white;border:1px solid var(--line)}.service-number{font-family:Manrope,sans-serif;font-size:30px;color:var(--gold);font-weight:800}.service-card h2{font-family:Manrope,sans-serif;font-size:21px;margin:12px 0}.service-card p{font-size:13px;color:var(--muted);margin:0}.about-layout{max-width:var(--max);margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}.about-photo{height:500px;background:#e2dfd7}.about-photo img{width:100%;height:100%;object-fit:cover}.about-layout p:not(.eyebrow){font-size:14px;color:var(--muted)}.subheading{font-family:Manrope,sans-serif;margin:25px 0 0}.about-layout .check-list li{color:#555}.contact-layout{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:start;max-width:none}.contact-copy{max-width:480px;justify-self:end}.contact-copy>p:not(.eyebrow){color:var(--muted);font-size:14px}.contact-note{background:#eae6dc;padding:20px;margin-top:28px;font-size:13px}.contact-note ul{padding-left:20px;color:#666}.small-note{font-size:11px!important;color:#777}.quote-form{width:100%;max-width:560px;background:white;padding:32px;border:1px solid var(--line);display:flex;flex-direction:column;gap:8px}.quote-form label{font-size:11px;font-weight:700;margin-top:8px}.quote-form input,.quote-form select,.quote-form textarea{width:100%;border:1px solid #dcdad3;padding:13px 14px;font:inherit;font-size:13px;background:#fbfbf9;border-radius:0}.quote-form input:focus,.quote-form select:focus,.quote-form textarea:focus{outline:2px solid #d4b878;border-color:transparent}.quote-form button{margin-top:12px;align-self:flex-start}.form-status{font-size:12px;color:#5d6a45}.legal-copy{max-width:850px;margin:auto}.legal-copy h2{font-family:Manrope,sans-serif;font-size:21px;margin:28px 0 8px}.legal-copy p{color:#62666a;font-size:14px}
+@media(max-width:900px){.main-nav{gap:15px;font-size:12px}.site-header{padding:0 24px}.brand{font-size:18px}.hero{min-height:550px}.product-image{height:200px}.product-info{padding:18px}.about-layout{gap:35px}.contact-layout{gap:35px}}
+@media(max-width:700px){.site-header{height:68px}.menu-toggle{display:block}.main-nav{display:none;position:absolute;top:68px;left:0;right:0;padding:14px 24px 24px;background:#fbfbf8;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:0}.main-nav.open{display:flex}.main-nav>a:not(.nav-cta){padding:12px 0}.main-nav>a.active:after,.main-nav>a:not(.nav-cta):hover:after{display:none}.nav-cta{text-align:center;margin-top:8px}.hero{min-height:560px;background-position:58% center}.hero-content{padding:65px 24px}.hero h1{font-size:40px}.hero-content>p:not(.eyebrow){font-size:14px}.hero-caption{font-size:9px}.section{padding:65px 22px}.product-grid{grid-template-columns:1fr;gap:18px}.product-image{height:250px}.product-info{padding:22px}.feature-band{grid-template-columns:1fr}.feature-image{height:300px;min-height:0}.feature-copy{padding:45px 24px 55px}.quote-strip{align-items:flex-start;flex-direction:column;padding:42px 24px}.footer-top{grid-template-columns:1fr}.footer-top>p{text-align:left}.footer-links{gap:15px}.footer-bottom{flex-direction:column;gap:5px}.page-hero{padding:62px 22px}.service-grid{grid-template-columns:1fr}.about-layout{grid-template-columns:1fr;gap:30px}.about-photo{height:320px}.contact-layout{grid-template-columns:1fr;gap:30px}.contact-copy{justify-self:stretch}.quote-form{padding:22px}.product-grid-wide{grid-template-columns:1fr}}
+/* WADONDO.COM brand and gold logo */
+.wadondo-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  white-space: nowrap;
+}
+
+.wadondo-name {
+  color: #b58a36;
+  font-family: Manrope, sans-serif;
+  font-size: 25px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.wadondo-mark {
+  width: 48px;
+  height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #e6c66f, #987025);
+  border: 2px solid #d5b45e;
+  color: #202225;
+  font-size: 25px;
+  font-weight: 900;
+  box-shadow: 0 2px 8px #0002;
+}
+
+.brand-footer .wadondo-name {
+  color: #e4c16b;
+}
+
+@media (max-width: 600px) {
+  .wadondo-name {
+    font-size: 19px;
+  }
+
+  .wadondo-mark {
+    width: 38px;
+    height: 38px;
+    font-size: 20px;
+  }
+}
+.top-contact-bar {
+  background: #202225;
+  color: #fff;
+  padding: 9px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  flex-wrap: wrap;
+  font-size: 12px;
+}
+
+.top-contact-bar a:hover {
+  color: #e4c16b;
+}
+
+@media (max-width: 600px) {
+  .top-contact-bar {
+    gap: 8px 16px;
+    font-size: 10px;
+  }
+}
+/* Products dropdown menu */
+.nav-dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 28px 0;
+  color: #45474a;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.dropdown-toggle span {
+  color: #b58a36;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -15px;
+  min-width: 220px;
+  background: #ffffff;
+  border-top: 3px solid #c7a15a;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.14);
+  z-index: 100;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 12px 16px;
+  color: #252525;
+  font-size: 13px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.dropdown-menu a:hover {
+  background: #f5f0e5;
+  color: #a47a2e;
+}
+
+.nav-dropdown:hover .dropdown-menu,
+.nav-dropdown:focus-within .dropdown-menu {
+  display: block;
+}
+@media (max-width: 700px) {
+  .dropdown-toggle {
+    padding: 12px 0;
+  }
+
+  .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    border-top: 2px solid #c7a15a;
+    margin: 0 0 10px 10px;
+  }
+
+  .nav-dropdown:hover .dropdown-menu,
+  .nav-dropdown:focus-within .dropdown-menu {
+    display: block;
+  }
+}
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.top-bar a {
+    text-decoration: none;
+}
+/* Nested Products dropdown */
+.nav-dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -15px;
+  min-width: 230px;
+  background: #fff;
+  border-top: 3px solid #c7a15a;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, .14);
+  z-index: 100;
+}
+
+.nav-dropdown:hover > .dropdown-menu,
+.nav-dropdown:focus-within > .dropdown-menu {
+  display: block;
+}
+
+.submenu {
+  position: relative;
+}
+
+.submenu-toggle,
+.submenu-menu a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 16px;
+  font-size: 13px;
+  color: #252525;
+}
+
+.submenu-toggle:hover,
+.submenu-menu a:hover {
+  background: #f5f0e5;
+  color: #a47a2e;
+}
+
+.submenu-menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  min-width: 200px;
+  background: #fff;
+  border-top: 3px solid #c7a15a;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, .14);
+}
+
+.submenu:hover > .submenu-menu,
+.submenu:focus-within > .submenu-menu {
+  display: block;
+}
+
+@media (max-width: 700px) {
+  .dropdown-menu,
+  .submenu-menu {
+    position: static;
+    display: block;
+    min-width: 0;
+    box-shadow: none;
+    border-top: 0;
+    border-left: 2px solid #c7a15a;
+    margin-left: 12px;
+  }
+
+  .dropdown-menu {
+    background: #faf9f6;
+  }
+
+  .submenu-menu {
+    background: #fff;
+  }
+}
+/* WADONDO.COM: final nested Products dropdown fixes */
+
+/* Desktop dropdown */
+@media (min-width: 701px) {
+  .nav-dropdown {
+    position: relative;
+  }
+
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -15px;
+    min-width: 230px;
+    padding: 0;
+    background: #fff;
+    border-top: 3px solid var(--gold);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.14);
+    z-index: 100;
+  }
+
+  .nav-dropdown:hover > .dropdown-menu,
+  .nav-dropdown:focus-within > .dropdown-menu {
+    display: block;
+  }
+
+  .submenu {
+    position: relative;
+  }
+
+  .submenu-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .submenu-menu {
+    display: none;
+    position: absolute;
+    top: -3px;
+    left: 100%;
+    min-width: 200px;
+    background: #fff;
+    border-top: 3px solid var(--gold);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.14);
+    z-index: 101;
+  }
+
+  .submenu:hover > .submenu-menu,
+  .submenu:focus-within > .submenu-menu {
+    display: block;
+  }
+
+  .submenu-menu a {
+    display: block;
+    padding: 12px 16px;
+    color: #252525;
+    font-size: 13px;
+    border-bottom: 1px solid #eee;
+  }
+}
+
+/* Mobile navigation */
+@media (max-width: 700px) {
+  .dropdown-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+  }
+
+  .dropdown-menu {
+    position: static;
+    display: block;
+    min-width: 0;
+    margin: 0 0 10px 10px;
+    padding: 0;
+    background: #faf9f6;
+    border-top: 0;
+    border-left: 2px solid var(--gold);
+    box-shadow: none;
+  }
+
+  .submenu-menu {
+    position: static;
+    display: block;
+    min-width: 0;
+    margin-left: 12px;
+    background: #fff;
+    border-top: 0;
+    border-left: 2px solid var(--gold);
+    box-shadow: none;
+  }
+
+  .submenu-toggle,
+  .submenu-menu a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 14px;
+    font-size: 13px;
+  }
+}
+/* WADONDO.COM FAQ section */
+.faq-section {
+  background: #fbfbf8;
+}
+
+.faq-list {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background: #fff;
+  border: 1px solid var(--line);
+  margin-bottom: 12px;
+  transition: border-color 0.2s ease;
+}
+
+.faq-item[open] {
+  border-color: var(--gold);
+}
+
+.faq-item summary {
+  position: relative;
+  list-style: none;
+  cursor: pointer;
+  padding: 20px 52px 20px 22px;
+  font-family: Manrope, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: "+";
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #a47a2e;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.faq-item[open] summary::after {
+  content: "−";
+}
+
+.faq-item summary:hover {
+  color: #a47a2e;
+}
+
+.faq-item summary:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: -3px;
+}
+
+.faq-answer {
+  padding: 0 22px 20px;
+}
+
+.faq-answer p {
+  margin: 0 0 12px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+@media (max-width: 700px) {
+  .faq-item summary {
+    padding: 17px 44px 17px 16px;
+    font-size: 14px;
+  }
+
+  .faq-item summary::after {
+    right: 14px;
+  }
+
+  .faq-answer {
+    padding: 0 16px 17px;
+  }
+}/* WADONDO.COM product pricing */
+.product-price {
+  margin: 14px 0;
+  padding: 12px;
+  background: rgba(201, 162, 39, 0.08);
+  border-left: 3px solid var(--gold);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.product-price strong {
+  color: var(--gold);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.product-price .price-label,
+.product-price .price-unit {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.product-price .price-label {
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+/* =========================================
+   WADONDO.COM ANIMATED WELCOME SCREEN
+   ========================================= */
+
+.welcome-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background:
+    radial-gradient(ellipse at center, #202a32 0%, #111820 55%, #090d11 100%);
+  opacity: 1;
+  visibility: visible;
+  transition:
+    opacity 0.8s ease,
+    visibility 0.8s ease;
+}
+
+.welcome-screen.welcome-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.welcome-content {
+  width: 100%;
+  max-width: 520px;
+  text-align: center;
+  animation: welcome-content-enter 1s ease both;
+}
+
+.welcome-logo {
+  width: 92px;
+  height: 92px;
+  margin: 0 auto 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #c9a227;
+  border-radius: 50%;
+  box-shadow: 0 0 35px rgba(201, 162, 39, 0.18);
+  animation: welcome-logo-glow 2s ease-in-out infinite alternate;
+}
+
+.welcome-logo span {
+  color: #d7b44a;
+  font-family: Georgia, serif;
+  font-size: 54px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.welcome-overline {
+  margin: 0 0 15px;
+  color: #c9a227;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  animation: welcome-text-enter 0.8s 0.3s ease both;
+}
+
+.welcome-brand {
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(30px, 7vw, 49px);
+  font-weight: 800;
+  letter-spacing: 2px;
+  animation: welcome-text-enter 0.8s 0.5s ease both;
+}
+
+.welcome-brand span {
+  color: #c9a227;
+}
+
+.welcome-divider {
+  width: 70px;
+  height: 2px;
+  margin: 24px auto;
+  background: #c9a227;
+  animation: welcome-divider-expand 1s 0.6s ease both;
+}
+
+.welcome-message {
+  margin: 0;
+  color: #e0e4e8;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  animation: welcome-text-enter 0.8s 0.7s ease both;
+}
+
+.welcome-loader {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 35px;
+}
+
+.welcome-loader span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #c9a227;
+  animation: welcome-dot 1s ease-in-out infinite;
+}
+
+.welcome-loader span:nth-child(2) {
+  animation-delay: 0.15s;
+}
+
+.welcome-loader span:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.welcome-status {
+  margin-top: 14px;
+  color: #9ba5ae;
+  font-size: 9px;
+  letter-spacing: 2.5px;
+}
+
+@keyframes welcome-content-enter {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes welcome-text-enter {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes welcome-logo-glow {
+  from {
+    box-shadow: 0 0 15px rgba(201, 162, 39, 0.12);
+    transform: scale(0.97);
+  }
+  to {
+    box-shadow: 0 0 35px rgba(201, 162, 39, 0.35);
+    transform: scale(1);
+  }
+}
+
+@keyframes welcome-divider-expand {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70px;
+  }
+}
+
+@keyframes welcome-dot {
+  0%, 60%, 100% {
+    opacity: 0.35;
+    transform: translateY(0);
+  }
+  30% {
+    opacity: 1;
+    transform: translateY(-5px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .welcome-content,
+  .welcome-logo,
+  .welcome-overline,
+  .welcome-brand,
+  .welcome-divider,
+  .welcome-message,
+  .welcome-loader span {
+    animation: none !important;
+  }
+
+  .welcome-screen {
+    transition: opacity 0.2s ease;
+  }
+}
+/* Floating WhatsApp Button */
+.whatsapp-float {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 9998;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 17px;
+  border-radius: 50px;
+  background: #25D366;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.25);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.whatsapp-float svg {
+  width: 27px;
+  height: 27px;
+  flex-shrink: 0;
+}
+
+.whatsapp-float:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 480px) {
+  .whatsapp-float {
+    right: 14px;
+    bottom: 14px;
+    padding: 12px;
+  }
+
+  .whatsapp-float span {
+    display: none;
+  }
+
+  .whatsapp-float svg {
+    width: 30px;
+    height: 30px;
+  }
+}
