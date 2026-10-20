@@ -1076,3 +1076,69 @@ details[open] {
   background: #E0BD4F;
   color: #101419;
 }
+/* Mobile responsive improvements */
+@media screen and (max-width: 768px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .container,
+  .site-header,
+  .hero,
+  .section {
+    max-width: 100%;
+  }
+
+  .hero {
+    padding: 40px 18px;
+    background-position: center;
+  }
+
+  .hero h1 {
+    font-size: clamp(28px, 7vw, 40px);
+    line-height: 1.2;
+  }
+
+  .hero p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  button,
+  .btn,
+  a {
+    overflow-wrap: anywhere;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero {
+    padding: 32px 14px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
