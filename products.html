@@ -27,15 +27,14 @@
       <a href="index.html">Home</a>
       <div class="nav-dropdown">
         <a href="products.html" class="dropdown-toggle active">Products <span>⌄</span></a>
-       
-     <div class="dropdown-menu">
-  <a href="hotel-locks.html">Hotel Door Locks</a>
-  <a href="card-encoders.html">Card Encoders &amp; Readers</a>
-  <a href="key-cards.html">Hotel Key Cards</a>
-  <a href="room-panels.html">Room &amp; Entrance Panels</a>
-  <a href="room-accessories.html">Room Accessories</a>
-</div>
-          </div>
+        <div class="dropdown-menu">
+          <a href="products.html">All Products</a>
+          <a href="hotel-locks.html">Hotel Door Locks</a>
+          <a href="glass-door-locks.html">Glass Door Locks</a>
+          <a href="card-encoders.html">Card Encoders &amp; Readers</a>
+          <a href="key-cards.html">Hotel Key Cards</a>
+          <a href="room-panels.html">Room &amp; Entrance Panels</a>
+          <a href="room-accessories.html">Room Accessories</a>
         </div>
       </div>
       <a href="services.html">Services</a>
@@ -46,14 +45,81 @@
     </nav>
   </header>
   <main>
-    <!-- Page introduction -->
-    <section class="page-hero">
-      <p class="eyebrow">OUR PRODUCT RANGE</p>
-      <h1>Hotel Security &amp; Access Products</h1>
-      <p>Explore electronic hotel locks, RFID key cards, encoders and room accessories for hospitality environments.</p>
+    <section class="page-hero shop-hero">
+      <p class="eyebrow">WADONDO.COM ONLINE CATALOGUE</p>
+      <h1>Hotel Access Products</h1>
+      <p>Find hotel door locks, key cards, encoders and room accessories. Add items to your enquiry cart and send us your requirements.</p>
+      <div class="shop-search-wrap">
+        <label class="sr-only" for="product-search">Search products</label>
+        <input id="product-search" class="shop-search" type="search" placeholder="Search locks, key cards, encoders…" autocomplete="off">
+        <span aria-hidden="true">⌕</span>
+      </div>
+      <p class="shop-assurance">✓ Enquiry-first ordering <span>•</span> ✓ Bulk orders welcome <span>•</span> ✓ No online payment required</p>
     </section>
-  
+
+    <section class="section section-light shop-section">
+      <div class="section-heading">
+        <p class="eyebrow">SHOP BY CATEGORY</p>
+        <h2>Find what your hotel needs</h2>
+        <p>Choose a category to browse available product styles.</p>
+      </div>
+      <div class="category-grid" id="category-grid">
+        <a class="category-tile" href="hotel-locks.html" data-search="hotel door locks electronic locks">
+          <img src="images/hotel-lock.jpeg" alt="Electronic hotel door lock" loading="lazy" onerror="this.onerror=null;this.src='images/electronic-lock.jpeg'">
+          <span class="category-tile-copy"><small>01 / ACCESS</small><strong>Hotel Door Locks</strong><span>Browse lock styles →</span></span>
+        </a>
+        <a class="category-tile" href="card-encoders.html" data-search="card encoder readers elevator access">
+          <img src="images/encoder.jpeg" alt="Hotel card encoder" loading="lazy">
+          <span class="category-tile-copy"><small>02 / CARD MANAGEMENT</small><strong>Card Encoders &amp; Readers</strong><span>Explore readers →</span></span>
+        </a>
+        <a class="category-tile" href="key-cards.html" data-search="hotel key cards RFID cards">
+          <img src="images/key-card.jpeg" alt="RFID hotel key card" loading="lazy">
+          <span class="category-tile-copy"><small>03 / GUEST ACCESS</small><strong>Hotel Key Cards</strong><span>Browse key cards →</span></span>
+        </a>
+        <a class="category-tile" href="room-panels.html" data-search="room entrance panels access control">
+          <img src="images/advant-panels.jpeg" alt="Hotel room and entrance panel" loading="lazy" onerror="this.onerror=null;this.src='images/entrance-panel.jpeg'">
+          <span class="category-tile-copy"><small>04 / PANELS</small><strong>Room &amp; Entrance Panels</strong><span>Explore panels →</span></span>
+        </a>
+        <a class="category-tile" href="room-accessories.html" data-search="room accessories energy saving card switch">
+          <img src="images/energy-saving-switch.jpeg" alt="Hotel energy-saving card switch" loading="lazy">
+          <span class="category-tile-copy"><small>05 / ROOM CONTROL</small><strong>Room Accessories</strong><span>Browse accessories →</span></span>
+        </a>
+      </div>
+      <p id="search-empty" class="search-empty" hidden>No matching categories. Try another search.</p>
+    </section>
+
+    <section class="section shop-featured-section">
+      <div class="section-heading">
+        <p class="eyebrow">START YOUR ORDER</p>
+        <h2>Featured products</h2>
+        <p>Add a product to your enquiry cart, or ask us for its current price and compatibility.</p>
+      </div>
+      <div class="product-grid shop-featured-grid">
+        <article class="product-card shop-product-card" data-name="Electronic Hotel Door Lock" data-category="Hotel Door Locks" data-page="hotel-locks.html">
+          <a class="product-image" href="hotel-locks.html"><img src="images/hotel-lock.jpeg" alt="Electronic hotel door lock" loading="lazy" onerror="this.onerror=null;this.src='images/electronic-lock.jpeg'"></a>
+          <div class="product-info"><p class="product-type">HOTEL ACCESS</p><h3>Electronic Hotel Door Lock</h3><p>Electronic locking for compatible hotel guest rooms.</p><p class="product-price"><strong>Contact for price</strong></p><a class="text-link" href="hotel-locks.html">View category →</a></div>
+        </article>
+        <article class="product-card shop-product-card" data-name="Hotel Card Encoder" data-category="Card Encoders & Readers" data-page="card-encoders.html">
+          <a class="product-image" href="card-encoders.html"><img src="images/encoder.jpeg" alt="Hotel card encoder" loading="lazy"></a>
+          <div class="product-info"><p class="product-type">CARD MANAGEMENT</p><h3>Hotel Card Encoder</h3><p>Equipment for issuing and managing compatible hotel key cards.</p><p class="product-price"><strong>Contact for price</strong></p><a class="text-link" href="card-encoders.html">View category →</a></div>
+        </article>
+        <article class="product-card shop-product-card" data-name="RFID Hotel Key Card" data-category="Hotel Key Cards" data-page="key-cards.html">
+          <a class="product-image" href="key-cards.html"><img src="images/key-card.jpeg" alt="RFID hotel key card" loading="lazy"></a>
+          <div class="product-info"><p class="product-type">GUEST ACCESS</p><h3>RFID Hotel Key Card</h3><p>Guest access card for compatible electronic lock systems.</p><p class="product-price"><strong>Contact for price</strong></p><a class="text-link" href="key-cards.html">View category →</a></div>
+        </article>
+        <article class="product-card shop-product-card" data-name="Room and Entrance Panels" data-category="Room & Entrance Panels" data-page="room-panels.html">
+          <a class="product-image" href="room-panels.html"><img src="images/advant-panels.jpeg" alt="Room and entrance panels" loading="lazy" onerror="this.onerror=null;this.src='images/entrance-panel.jpeg'"></a>
+          <div class="product-info"><p class="product-type">ROOM PANELS</p><h3>Room &amp; Entrance Panels</h3><p>Panels for compatible hotel access installations.</p><p class="product-price"><strong>Contact for price</strong></p><a class="text-link" href="room-panels.html">View category →</a></div>
+        </article>
+        <article class="product-card shop-product-card" data-name="Hotel Energy-Saving Card Switch" data-category="Room Accessories" data-page="room-accessories.html">
+          <a class="product-image" href="room-accessories.html"><img src="images/energy-saving-switch.jpeg" alt="Hotel energy-saving card switch" loading="lazy"></a>
+          <div class="product-info"><p class="product-type">ROOM CONTROL</p><h3>Hotel Energy-Saving Card Switch</h3><p>Card-operated room power control for compatible installations.</p><p class="product-price"><strong>Contact for price</strong></p><a class="text-link" href="room-accessories.html">View category →</a></div>
+        </article>
+      </div>
+      <div class="shop-quote-band"><div><p class="eyebrow">NEED A BULK ORDER?</p><h2>Tell us what your property needs.</h2><p>We’ll help you confirm product options, compatibility and current pricing.</p></div><a class="button button-gold" href="contact.html#quote">Request a Quote</a></div>
+    </section>
   </main>
+
   <!-- Footer -->
   <footer class="site-footer">
     <div class="footer-top">
