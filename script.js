@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const updateCartUI = () => {
     cartLauncher.querySelector(".cart-count").textContent = cartCount();
     if (!cart.length) {
-      cartItems.innerHTML = '<div class="cart-empty"><span>▣</span><h3>Your cart is empty</h3><p>Browse the catalogue and add products you would like a quote for.</p><a class="button button-dark" href="products.html">Browse Products</a></div>';
+    cartItems.innerHTML = '<div class="cart-empty"><span>▣</span><h3>Your cart is empty</h3><p>Browse the catalogue and add products you would like a quote for.</p><a class="button button-dark" href="products.html">Browse Products</a></div>';
     } else {
       cartItems.innerHTML = cart.map((item, index) => '<div class="cart-line"><div class="cart-line-copy"><strong>' + safeText(item.name) + '</strong><small>' + safeText(item.category) + ' · Price on request</small><a href="' + safeText(item.page || "products.html") + '">View product category</a></div><div class="cart-qty"><button type="button" data-cart-action="minus" data-index="' + index + '" aria-label="Decrease quantity">−</button><span>' + item.qty + '</span><button type="button" data-cart-action="plus" data-index="' + index + '" aria-label="Increase quantity">+</button></div><button type="button" class="cart-remove" data-cart-action="remove" data-index="' + index + '" aria-label="Remove ' + safeText(item.name) + '">×</button></div>').join("");
     }
@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
   cartPanel.querySelector(".cart-close").addEventListener("click", closeCart);
   cartPanel.addEventListener("click", event => {
     const button = event.target.closest("[data-cart-action]");
-    if (!button) return;
+      if (!button) return;
     const index = Number(button.dataset.index);
     const action = button.dataset.cartAction;
     if (!cart[index]) return;
